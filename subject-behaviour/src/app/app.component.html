@@ -1,0 +1,27 @@
+<!--
+  Subject behaviour 
+  using sb we send data to other component or service.
+  sb special type of behaviour
+  angular have different types of subjects like async , behaviour and replay subject.
+  sb represent current value and it imported from rxjs library
+  difference - we can send initial value in bs (behaviour subject)
+
+  we get last emitted value from bs 
+  bs is aways return a value , even if no data emitted from subscriber.
+
+  why bs
+  load data once when we need the data
+  when data change it notify the value is subscribing
+  keep data update automatically across the application
+  remove unnessary request that cause data is loaded or not
+
+  bs have to main method subscribe and next
+  bs emits the value and subscribe the value using the subscribe method
+  subject emit the next value using the next method and new subscriber get then latest value
+  bs emits next value and initialize with the value 3 and new subscriber get the new value 
+
+
+  for get current value getValue() method use
+  if we want to change initial value use next() method with new value after using next() method use get new value
+   
+-->

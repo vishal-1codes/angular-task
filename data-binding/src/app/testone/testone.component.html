@@ -1,0 +1,81 @@
+
+<p>testone works!</p>
+<!--
+    link - https://www.tutorialspoint.com/angular8/angular8_data_binding.htm
+
+    data binding in angular means 
+    dow to bind your data from component to html dom element(template)
+    we can make data binding using one way and two way interaction
+
+    1.one way data binding 
+    is a one way interaction between component and it templates.
+    we we change some data in component then it also change in html component.
+    bellow userone example is a one way data binding
+
+    2. Event binding 
+    events are like button , double click , mouse hover , key press , mouse action.
+    when user interact with application and perform some action, then event call 
+    it denoted as () and on- like sign.
+
+    in event binding we get data that user click wehn we use ngFor, we get data in event.target.value
+    in on-click button we call simple click function
+
+    3.Property binding
+    it use to bind property of component to dom element , it deneoted by []
+    it use most case in inout tag
+
+    4.class binding
+    it use to bind data from component to html class property
+    use of class binding is we we have condition like true and false then we can bind data using present then bind with
+    html element if not then not bind data.
+
+    in class binding we assign var in class attribute then that assign varibale we can pass class name.
+    using that class name we can do css 
+
+    5. Style binding
+    bind data from component to html style property.
+    using this binding we can apply color property to html element
+
+    6.two way binding
+    it is two way interaction (componet to view and view to component)
+    eg: ngModel (when we change data in html dome then it reflact to template , and vise versa)
+
+
+
+
+
+
+    
+
+-->
+<!--1st method one way data binding -->
+<p>{{userone}}</p>
+
+<!--2nd method event binding-->
+<p>event binding</p>
+<button (click)="showData2($event)">Call Event</button>
+
+<button on-click="showData21()">Canonical form</button>
+
+<!--3rd method property binding , also attribute binding it same i think-->
+<p>bellow is property binding example</p>
+<input placeholder="enter name" [value]="usernameone">
+
+<!--4th class binding-->
+<p>bellow is class binding example</p>
+<p [class]="myclassone">simple class binding</p>
+
+<p [class.blue]="applycssclass">class binding with value</p>
+
+<!--5th style binding-->
+<p>bellow is style binding property example</p>
+
+<p [style.color]="mycolorone">get style binding color</p>
+
+<!--6th two way binding example-->
+<p>bellow is two way binding example</p>
+
+<input type="text" [(ngModel)]="usernametwo" />
+<p>Two way binding! Hello {{ usernametwo }}!</p>
+
+
